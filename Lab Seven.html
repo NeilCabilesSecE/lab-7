@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab seven: HTML and CSS Basics</title>
+    <style>
+        body {
+            background-color: #9b0b0b;
+        }
+        h1 {
+            font-size: 6em;
+            color: #338
+        }
+        P {
+            font-size: len;
+            line-height: 4.5;
+        }
+        ul {
+            list-style-type: none;
+            padding: 5;
+        }
+        li {
+            padding: 6px;
+            background-color: #1774ee; 
+        }
+    </style>
+    </head>
+    <body>
+        <h2><b><u>Hello, welcome to the basics of HTML and CSS</u></b></h2>
+        <p><h2>This website is a simple webpage that was made to practice the basics of HTML and CSS.
+        </p></h2>
+
+        <ul id="listitem">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+
+        </ul>
+
+        <button id="ChangeBackground">Change Background</button>
+        
+        <script>
+            function ChangeBackgroundImage() {
+                document.body.style.backgroundColor = "#A2D2FF"
+            }
+        document.getElementById('ChangeBackground').addEventListener("click", ChangeBackgroundImage);
+
+        function addItem() {
+                const listItem = document.getElemntById('listitem');
+                const newItem = document.createElement ('li');
+                newItem.textcontent = 'New Item';
+                listItem.appendChild(newItem);
+            }
+            document.getElementById('addnewitem').addEventListener("click", addItem)
+
+        </script>
+        </body>
+        
+
+        </html>
